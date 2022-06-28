@@ -27,4 +27,15 @@ router.post("/:productId", (req, res, next) => {
   }
 });
 
+router.patch("/", (req, res, next) => {
+  res.status(200).json({
+    message: "Updating Products",
+  });
+});
+router.delete("/", (req, res, next) => {
+  res.status(200).json({
+    message: "Deleted Products",
+  });
+});
+
 module.exports = router;
